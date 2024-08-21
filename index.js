@@ -2,7 +2,8 @@ function fetchData() {
     fetch('https://tea.qingnian8.com/api/bizhi/homeBanner', {
         headers: {
             'access-key': 'Lrs_key@xxm2024'
-        }
+        },
+        mode: 'no-cors'
     })
         .then(response => response.json())
         .then(data => {
